@@ -97,9 +97,11 @@ input:focus, textarea:focus {
   line-height: 1;
 }
 
-.orange {
-  color: #f06449 !important;
+.purple {
+    color: #a259ff;   /* your purple */
+    font-weight: 700; /* makes it bold */
 }
+
 
 .link__hover-effect {
   position: relative;
@@ -201,7 +203,7 @@ nav,
 }
 
 .social__link {
-  background-color: #f06449;
+  background-color: #e132db;
   color: white;
   padding: 6px;
   width: 32px;
@@ -283,8 +285,8 @@ nav {
 }
 
 #personal-logo {
-  width: 75px;
-  height: 75px;
+  width: 100px;
+  height: 100px;
   filter: invert(1);
 }
 
@@ -297,7 +299,7 @@ nav {
 }
 
 .nav__link--anchor {
-  font-size: 16px;
+  font-size: 20px;
   color: #242424;
   font-weight: 700;
 }
@@ -594,7 +596,7 @@ footer {
 }
 
 .footer__logo--img {
-  width: 75px;
+  width: 100px;
 }
 
 .footer__social--list {
@@ -603,11 +605,13 @@ footer {
   display: flex;
   justify-content: space-around;
   margin: 28px 0;
+  
 }
 
 .footer__social--link,
 .footer__copyright {
   color: white;
+  font-size: 18px;
 }
 
 /* 
@@ -673,6 +677,64 @@ footer {
   left: 80vw;
 }
 
+
+
+
+/* Small phones, tablets, large smart phones */
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 80px;
+    }
+    .header__para {
+        font-size: 20px;
+    }   
+    .modal {
+        top: 0;
+        left: 0;
+        transform: none;
+        height: auto;
+        width: 100%;
+        flex-direction: column-reverse;
+        border-radius: 0;
+    }
+    .modal__half {
+        width: 100%;
+    }
+
+    /* Small phones */
+@media (max-width: 480px) {
+    .title {
+        font-size: 52px;
+    }
+    .header__para {
+        font-size: 18px;
+    }
+    .nav__link:first-child {
+        display: none;
+    }
+}
+    .project__description--para {
+    display: none;
+}
+    .project__description {
+    left: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+}
+
+    .project__description--sub-title {
+        margin-bottom: 8px;
+    }
+
+    .modal_half {
+        padding: 40px;
+    }
+
+}
+
+
 /* ADDED AFTER TUTORIAL */
 .footer__logo--popper {
   position: absolute;
@@ -692,54 +754,3 @@ footer {
   transform: translateX(60px);
   opacity: 1;
 }
-
-/* Small phones, tablets, large smart phones */
-@media (max-width: 768px) {
-  .title {
-    font-size: 80px;
-  }
-  .header__para {
-    font-size: 20px;
-  }
-  .modal {
-    top: 0;
-    left: 0;
-    transform: none;
-    height: auto;
-    width: 100%;
-    flex-direction: column-reverse;
-    border-radius: 0;
-  }
-  .modal__half {
-    width: 100%;
-  }
-}
-
-/* Small phones */
-@media (max-width: 480px) {
-  .title {
-    font-size: 52px;
-  }
-  .header__para {
-    font-size: 18px;
-  }
-  .nav__link:first-child {
-    display: none;
-  }
-  .project__description--para {
-    display: none;
-  }
-  .project__description {
-    left: 0;
-    padding: 0;
-    width: 100%;
-    text-align: center;
-  }
-  .project__description--sub-title {
-    margin-bottom: 8px;
-  }
-  .modal__half {
-    padding: 40px;
-  }
-}
-
