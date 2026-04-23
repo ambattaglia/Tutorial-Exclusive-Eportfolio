@@ -355,6 +355,7 @@ nav {
 .modal__languages {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .modal__language {
@@ -365,6 +366,7 @@ nav {
   flex-direction: column;
   align-items: center;
   transition: all 300ms ease;
+  gap: 8px;
 }
 
 .modal__language:hover .language__name {
@@ -385,6 +387,9 @@ nav {
 
 .modal__language--img {
   width: 100%;
+  height: 60px;
+  object-fit: contain;
+  display: block;
 }
 
 .modal__contact {
